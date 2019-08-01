@@ -21,7 +21,7 @@
       <%= user_path(@user) %>
       " class="nav-link
       <%= 'active' if current_page?(user_path(@user)) %>
-      ">Microposts <span class="badge badge-secondary">
+      ">Posts <span class="badge badge-secondary">
         <%= @count_microposts %>
       </span></a></li>
       
@@ -29,7 +29,7 @@
       <%= followings_user_path(@user) %>
       " class="nav-link
       <%= 'active' if current_page?(followings_user_path(@user)) %>
-      ">Followings <span class="badge badge-secondary">
+      ">Follow <span class="badge badge-secondary">
       <%= @count_followings %>
       </span></a></li>
       
@@ -45,7 +45,7 @@
       <%= likes_user_path(@user) %>
       " class="nav-link
       <%= 'active' if current_page?(likes_user_path(@user)) %>
-      ">Favorites <span class="badge badge-secondary">
+      ">Likes <span class="badge badge-secondary">
       <%= @count_favposts %>
       </span></a></li>
       
